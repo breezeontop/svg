@@ -1,0 +1,26 @@
+{
+  "banner": null,
+  "entries": [
+    {
+      "id": "2026-10-10-1.1.0",
+      "version": "1.1.0",
+      "date": "2026-10-10",
+      "title": "Custom backgrounds, glass, custom accents and game downloads",
+      "items": [
+        "Custom backgrounds: upload an image or paste a link in Settings, Appearance, and set how much it is dimmed.",
+        "Glass: a new Appearance switch that makes panels, buttons and menus frosted and see-through.",
+        "Custom accent: pick any colour from the new Custom option in the accent list.",
+        "Download the game you're playing: the new button next to close saves it as an HTML file. It still loads the game's files from Breeze, so you need to be online."
+      ]
+    },
+    {
+      "id": "2026-10-09",
+      "version": "1.0.0",
+      "date": "2026-10-09",
+      "title": "Release!",
+      "items": [
+        "Welcome to Breeze! Thanks for stopping by. If you like this website, share it with friends."
+      ]
+    }
+  ]
+}

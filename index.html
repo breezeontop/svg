@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head><script>window.breezeConfig={"api":"https://breezeunb.locker","wisp":"wss://breezeunb.locker/wind/","pool":[],"build":"7669523f8239b9fd","updateFrom":"https://cdn.jsdelivr.net/gh/breezeontop/svg@main/"};</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/webp" href="./assets/img/fav.webp">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<title>breeze</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFBC6Z5TL"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-0SFBC6Z5TL');
+</script>
+<link rel="stylesheet" href="./assets/css/colors/default.css" id="colorlink">
+<link rel="stylesheet" href="./assets/css/index.5f4813d582bf.css">
+<link rel="stylesheet" href="./assets/css/browser.fa9718f8d95f.css">
+<link rel="stylesheet" href="./assets/css/games.2907f689a71c.css">
+<link rel="stylesheet" href="./assets/css/manga.ff3c4ac049ef.css">
+<link rel="stylesheet" href="./assets/css/movies.ace755c33159.css">
+<link rel="stylesheet" href="./assets/css/settings.0994f3ffc78a.css">
+<link rel="stylesheet" href="./assets/css/motion.83754517f5c2.css">
+<link rel="stylesheet" href="./assets/css/dropdowns.235783f58c3b.css">
+<link rel="stylesheet" href="./assets/css/toasts.e3b0c44298fc.css">
+<link rel="stylesheet" href="./assets/css/announcements.965b61785834.css">
+<link rel="stylesheet" href="./assets/css/glass.10cbfbdfc8d5.css">
+<script src="./assets/js/b.config.660f42ae6f31.js"></script>
+<script src="./assets/js/b.update.30be0f4d5fec.js"></script>
+<script src="./assets/js/b.appearance.7a66f09c973e.js"></script>
+<script src="./assets/js/b.glyphs.abae8e8a5523.js"></script>
+<script src="./assets/js/b.icons.a53a29e9c28e.js"></script>
+<script src="./assets/js/b.logs.d4b0425498d6.js"></script>
+<script src="./assets/js/b.monitor.7d6c6e0b9791.js"></script>
+<script src="./assets/js/b.motion.f789c1af99dd.js"></script>
+</head>
+<body>
+<div class="launch-screen" id="launch-screen" aria-hidden="true">
+<header class="lp-nav">
+<span class="lp-brand"><span class="lp-mark">G</span>Gradewell</span>
+<span class="lp-links"><span>Gradebook</span><span>Attendance</span><span>Reports</span><span>Pricing</span></span>
+<span class="lp-signin">Sign in</span>
+</header>
+<main class="lp-hero">
+<div class="lp-copy">
+<span class="lp-eyebrow">Gradebook for teachers</span>
+<h1>Grading that keeps up with your classroom.</h1>
+<p>Track assignments, attendance and progress in one place, and share reports with students and families.</p>
+<span class="lp-cta">Start free trial</span>
+</div>
+<div class="lp-card">
+<div class="lp-card-head"><span>Period 3 &#xb7; Biology</span><span>Fall term</span></div>
+<div class="lp-row lp-row-h"><span>Student</span><span>Quiz</span><span>Lab</span><span>Avg</span></div>
+<div class="lp-row"><span>Amara Okafor</span><span>92</span><span>88</span><b>A-</b></div>
+<div class="lp-row"><span>Ben Hartley</span><span>81</span><span>85</span><b>B</b></div>
+<div class="lp-row"><span>Chloe Martin</span><span>96</span><span>99</span><b>A</b></div>
+<div class="lp-row"><span>Diego Reyes</span><span>74</span><span>79</span><b>C+</b></div>
+<div class="lp-bar"><i></i></div>
+</div>
+</main>
+</div>
+<div class="announce-banner" id="announce-banner" hidden>
+<span class="announce-text"></span>
+<button class="announce-close" data-close-announce title="Dismiss" aria-label="Dismiss announcement">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</div>
+<nav class="nav">
+<div class="left">
+<button class="nav-home" data-open-home title="Home">
+<img height="18" src="./assets/img/fav.webp" alt="breeze logo">
+<span>breeze</span>
+</button>
+<button data-open-games title="Games" aria-label="Games">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#gamepad-2"/></svg>
+</button>
+<button data-open-movies title="Movies" aria-label="Movies">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#clapperboard"/></svg>
+</button>
+<button data-open-manga title="Manga" aria-label="Manga">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#sushi"/></svg>
+</button>
+<button data-open-browser title="Browser" aria-label="Browser">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#globe"/></svg>
+</button>
+</div>
+<div class="right">
+<a class="nav-discord" href="https://discord.gg/6VDYQNR6fW" target="_blank" rel="noopener" title="Join our Discord" aria-label="Join our Discord">
+<svg class="settings-credits-join-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+</svg>
+</a>
+<button class="whatsnew-bell" data-open-whatsnew title="What&apos;s new" aria-label="What&apos;s new">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#bell"/></svg>
+</button>
+<button data-open-settings title="Settings" aria-label="Settings">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#settings"/></svg>
+</button>
+</div>
+</nav>
+<!-- Rendered into the page below and into every internal browser tab, so the
+homepage markup lives in exactly one place. -->
+<template id="home-view">
+<h1>breeze</h1>
+<form class="search-shell" action="https://www.google.com/search" method="get" role="search">
+<span class="search-icon" aria-hidden="true">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#search"/></svg>
+</span>
+<input class="home-search" type="search" name="q" aria-label="Search the web" autocomplete="off" spellcheck="false">
+<span class="search-key" aria-hidden="true">Enter</span>
+</form>
+<nav class="home-shortcuts" aria-label="Quick links">
+<a class="home-shortcut" href="https://play.geforcenow.com/">
+<img class="home-shortcut-icon" src="https://icons.duckduckgo.com/ip3/play.geforcenow.com.ico" alt loading="lazy">
+<span class="home-shortcut-label">GeForce</span>
+</a>
+<a class="home-shortcut" href="https://www.youtube.com/">
+<img class="home-shortcut-icon" src="https://icons.duckduckgo.com/ip3/youtube.com.ico" alt loading="lazy">
+<span class="home-shortcut-label">YouTube</span>
+</a>
+<a class="home-shortcut" href="https://www.tiktok.com/">
+<img class="home-shortcut-icon" src="https://icons.duckduckgo.com/ip3/tiktok.com.ico" alt loading="lazy">
+<span class="home-shortcut-label">TikTok</span>
+</a>
+<a class="home-shortcut" href="https://discord.com/app">
+<img class="home-shortcut-icon" src="https://icons.duckduckgo.com/ip3/discord.com.ico" alt loading="lazy">
+<span class="home-shortcut-label">Discord</span>
+</a>
+</nav>
+</template>
+<div class="homecontent" data-home-root></div>
+<div class="app-page" data-app-page="games" hidden></div>
+<div class="app-page" data-app-page="movies" hidden></div>
+<div class="app-page" data-app-page="manga" hidden></div>
+<div class="games" id="games" hidden>
+<div class="games-panel">
+<header class="games-head">
+<h2 class="games-title">games</h2>
+<span class="games-count"></span>
+<button class="games-close" data-close-games title="Close" aria-label="Close">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</header>
+<div class="games-controls">
+<form class="games-search" role="search">
+<svg class="icon games-search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#search"/></svg>
+<input class="games-search-input" type="search" aria-label="Search games" placeholder="search games" autocomplete="off" spellcheck="false">
+</form>
+<select class="games-source-select" aria-label="Game source" data-dropdown>
+<option value="games">Games</option>
+<option value="webports">Webports</option>
+</select>
+</div>
+<div class="games-grid"></div>
+<p class="games-status" hidden></p>
+</div>
+</div>
+<div class="whatsnew" id="whatsnew" hidden>
+<div class="whatsnew-panel" role="dialog" aria-modal="true" aria-labelledby="whatsnew-title">
+<header class="whatsnew-head">
+<h2 id="whatsnew-title">What&apos;s new</h2>
+<button class="whatsnew-close" data-close-whatsnew title="Close" aria-label="Close">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</header>
+<div class="whatsnew-list" data-whatsnew-list></div>
+</div>
+</div>
+<div class="settings" id="settings" hidden>
+<div class="settings-panel" role="dialog" aria-modal="true" aria-label="Settings">
+<aside class="settings-rail">
+<nav class="settings-tabs">
+<button class="settings-tab is-active" data-section="general">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#sliders-horizontal"/></svg><span>General</span>
+</button>
+<button class="settings-tab" data-section="appearance">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#palette"/></svg><span>Appearance</span>
+</button>
+<button class="settings-tab" data-section="cloaking">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#venetian-mask"/></svg><span>Cloaking</span>
+</button>
+<button class="settings-tab" data-section="panic">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#triangle-alert"/></svg><span>Panic</span>
+</button>
+<button class="settings-tab" data-section="proxy">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#wifi"/></svg><span>Proxy</span>
+</button>
+<button class="settings-tab" data-section="credits">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#heart"/></svg><span>Credits</span>
+</button>
+</nav>
+</aside>
+<div class="settings-body">
+<header class="settings-head">
+<h2 class="settings-head-title" data-section-title>General</h2>
+<p class="settings-status" aria-live="polite"></p>
+<button class="settings-close" data-close-settings title="Close" aria-label="Close">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</header>
+<div class="settings-scroll">
+<section class="settings-section is-active" data-section="general">
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-engine">Search engine</label>
+<p class="settings-row-desc">Where homepage and address bar searches are sent.</p>
+</div>
+<div class="settings-row-control">
+<select id="setting-engine" data-setting="searchEngine" data-dropdown></select>
+</div>
+</div>
+</section>
+<section class="settings-section" data-section="appearance">
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Appearance</span>
+<p class="settings-row-desc">Light, dark, or follow your device.</p>
+</div>
+<div class="settings-row-control">
+<div class="settings-segmented" role="radiogroup" aria-label="Appearance" data-appearance-group></div>
+</div>
+</div>
+<div class="settings-row is-stacked">
+<div class="settings-row-text">
+<span class="settings-row-label">Accent</span>
+<p class="settings-row-desc">The color used for selected and active items. Applies instantly.</p>
+</div>
+<div class="settings-row-control">
+<div class="settings-themes" data-theme-grid></div>
+<input class="settings-color" type="color" data-accent-color tabindex="-1" aria-label="Custom accent colour">
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-font">Font</label>
+<p class="settings-row-desc">Loaded the first time you pick it.</p>
+</div>
+<div class="settings-row-control">
+<select id="setting-font" data-setting="font" data-dropdown></select>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-ui-scale">Interface size</label>
+<p class="settings-row-desc">Scale text and controls up or down together.</p>
+</div>
+<div class="settings-row-control">
+<select id="setting-ui-scale" data-setting="uiScale" data-dropdown></select>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Animations</span>
+<p class="settings-row-desc">Motion when menus, tabs and pages open.</p>
+</div>
+<div class="settings-row-control">
+<button class="settings-switch" data-setting="animations" role="switch" aria-checked="false" aria-label="Animations">
+<span class="settings-switch-knob"></span>
+</button>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Glass</span>
+<p class="settings-row-desc">Frosted, see-through panels, buttons and menus. Looks best over a background.</p>
+</div>
+<div class="settings-row-control">
+<button class="settings-switch" data-setting="glass" role="switch" aria-checked="false" aria-label="Glass">
+<span class="settings-switch-knob"></span>
+</button>
+</div>
+</div>
+<div class="settings-row is-stacked">
+<div class="settings-row-text">
+<span class="settings-row-label">Background</span>
+<p class="settings-row-desc">Your own image behind the homepage. Upload one or paste a link; uploads stay on this device.</p>
+</div>
+<div class="settings-row-control settings-background">
+<button class="settings-keycap" data-background-upload>Upload image</button>
+<input type="file" accept="image/*" data-background-file hidden>
+<input class="settings-input" id="setting-background-url" data-background-url type="text" placeholder="https://.../image.jpg" aria-label="Background image link" spellcheck="false" autocomplete="off">
+<button class="settings-ghost" data-background-clear title="Remove background" aria-label="Remove background">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-background-dim">Background dim</label>
+<p class="settings-row-desc">Darken or lighten the image so text stays readable.</p>
+</div>
+<div class="settings-row-control">
+<input class="settings-range" id="setting-background-dim" data-background-dim type="range" min="0" max="90" step="5">
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Background grid</span>
+<p class="settings-row-desc">The faint grid pattern behind the homepage.</p>
+</div>
+<div class="settings-row-control">
+<button class="settings-switch" data-setting="showGrid" role="switch" aria-checked="false" aria-label="Background grid">
+<span class="settings-switch-knob"></span>
+</button>
+</div>
+</div>
+</section>
+<section class="settings-section" data-section="cloaking">
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-cloak-preset">Preset</label>
+<p class="settings-row-desc">Fills in the title and icon below in one click.</p>
+</div>
+<div class="settings-row-control">
+<select id="setting-cloak-preset" data-cloak-preset data-dropdown></select>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-cloak-title">Tab title</label>
+<p class="settings-row-desc">Shown instead of &quot;breeze&quot;. Blank keeps it.</p>
+</div>
+<div class="settings-row-control">
+<input class="settings-input" id="setting-cloak-title" data-setting="cloakTitle" type="text" placeholder="Google Docs" spellcheck="false" autocomplete="off">
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-cloak-icon">Tab icon</label>
+<p class="settings-row-desc">An image url to use as the tab&apos;s icon.</p>
+</div>
+<div class="settings-row-control">
+<input class="settings-input" id="setting-cloak-icon" data-setting="cloakIcon" type="text" placeholder="https://.../favicon.ico" spellcheck="false" autocomplete="off">
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-launch-mode">Launch mode</label>
+<p class="settings-row-desc">Reopen breeze inside an about:blank or blob tab so its real address never reaches your history. Needs popups allowed, and launches on your first click each visit.</p>
+</div>
+<div class="settings-row-control">
+<select id="setting-launch-mode" data-setting="launchMode" data-dropdown></select>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Disguise when away</span>
+<p class="settings-row-desc">Only disguise while you are on another tab.</p>
+</div>
+<div class="settings-row-control">
+<button class="settings-switch" data-setting="cloakOnBlur" role="switch" aria-checked="false" aria-label="Disguise when away">
+<span class="settings-switch-knob"></span>
+</button>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Confirm before leaving</span>
+<p class="settings-row-desc">Ask before the tab closes or navigates away.</p>
+</div>
+<div class="settings-row-control">
+<button class="settings-switch" data-setting="confirmLeave" role="switch" aria-checked="false" aria-label="Confirm before leaving">
+<span class="settings-switch-knob"></span>
+</button>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Disguise text</span>
+<p class="settings-row-desc">Swaps letters for lookalikes so extensions scanning the page can&apos;t match words.</p>
+</div>
+<div class="settings-row-control">
+<button class="settings-switch" data-setting="disguiseText" role="switch" aria-checked="false" aria-label="Disguise text">
+<span class="settings-switch-knob"></span>
+</button>
+</div>
+</div>
+</section>
+<section class="settings-section" data-section="panic">
+<div class="settings-row">
+<div class="settings-row-text">
+<span class="settings-row-label">Panic key</span>
+<p class="settings-row-desc">Sends you somewhere safe instantly, even from inside a site or game. Esc cancels recording.</p>
+</div>
+<div class="settings-row-control">
+<button class="settings-keycap" id="setting-panic-key" data-record-key>not set</button>
+<button class="settings-ghost" data-clear-key title="Clear panic key" aria-label="Clear panic key">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</div>
+</div>
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-panic-url">Panic url</label>
+<p class="settings-row-desc">Where the panic key sends you.</p>
+</div>
+<div class="settings-row-control">
+<input class="settings-input" id="setting-panic-url" data-setting="panicUrl" type="text" spellcheck="false" autocomplete="off">
+</div>
+</div>
+</section>
+<section class="settings-section" data-section="proxy">
+<div class="settings-row">
+<div class="settings-row-text">
+<label class="settings-row-label" for="setting-wisp">Wisp server</label>
+<p class="settings-row-desc">The websocket server the proxy connects through. Blank uses the default; reload to apply.</p>
+</div>
+<div class="settings-row-control">
+<input class="settings-input" id="setting-wisp" data-setting="wispServer" type="text" spellcheck="false" autocomplete="off">
+</div>
+</div>
+</section>
+<section class="settings-section" data-section="credits">
+<div class="settings-credits">
+<p class="settings-credits-heading">breeze</p>
+<p class="settings-credits-desc">built by <a href="https://github.com/x8rr" target="_blank" rel="noopener">x8rr</a></p>
+<div class="settings-credits-list">
+<div class="settings-credits-item">
+<span class="settings-credits-name">Scramjet</span>
+<span class="settings-credits-role">Web proxy engine</span>
+</div>
+<div class="settings-credits-item">
+<span class="settings-credits-name">TMDB</span>
+<span class="settings-credits-role">Movie &amp; TV metadata</span>
+</div>
+<div class="settings-credits-item">
+<span class="settings-credits-name">HugeIcons</span>
+<span class="settings-credits-role">Icon set</span>
+</div>
+</div>
+<a class="settings-credits-join" href="https://discord.gg/6VDYQNR6fW" target="_blank" rel="noopener">
+<svg class="settings-credits-join-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+</svg>
+<span>Join our Discord</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="browser" id="browser" hidden>
+<div class="browser-toolbar">
+<div class="browser-nav">
+<button class="browser-btn browser-collapse" data-action="collapse" title="Toggle tab bar" aria-label="Toggle tab bar">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#panel-left"/></svg>
+</button>
+<button class="browser-btn" data-action="back" title="Back" aria-label="Back">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#arrow-left"/></svg>
+</button>
+<button class="browser-btn" data-action="forward" title="Forward" aria-label="Forward">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#arrow-right"/></svg>
+</button>
+<button class="browser-btn" data-action="reload" title="Reload" aria-label="Reload">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#rotate-cw"/></svg>
+</button>
+</div>
+<form class="browser-omnibox" data-action="navigate">
+<svg class="icon browser-omnibox-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#search"/></svg>
+<input class="browser-url" type="text" aria-label="Address" placeholder="search or enter a url" autocomplete="off" spellcheck="false">
+<span class="browser-spinner" hidden aria-hidden="true"></span>
+</form>
+<div class="browser-actions">
+<div class="browser-extensions" data-extension-buttons></div>
+<button class="browser-btn" data-action="fullscreen" title="Fullscreen" aria-label="Fullscreen">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#maximize"/></svg>
+</button>
+<button class="browser-btn" data-action="close" title="Close browser" aria-label="Close browser">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</div>
+</div>
+<div class="browser-body">
+<aside class="browser-sidebar surface-dark">
+<button class="browser-newtab" data-action="newtab" title="New tab">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#plus"/></svg>
+<span class="browser-newtab-label">new tab</span>
+</button>
+<div class="browser-tabs" role="tablist"></div>
+</aside>
+<div class="browser-frames"></div>
+</div>
+<div class="browser-popup-shield" hidden></div>
+<div class="browser-popup" hidden>
+<iframe class="browser-popup-frame" title="Extension popup"></iframe>
+</div>
+<div class="browser-error surface-dark" hidden>
+<p class="browser-error-text"></p>
+<button class="browser-retry" data-action="retry">retry</button>
+</div>
+</div>
+<section class="direct-game-player" data-direct-game-player role="dialog" aria-modal="true" aria-label="Game player" hidden>
+<iframe class="direct-game-frame" title="Game" allow="autoplay; fullscreen; gamepad" allowfullscreen sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-orientation-lock allow-presentation allow-modals allow-downloads"></iframe>
+<button class="direct-game-download" data-direct-game-download title="Download as HTML" aria-label="Download this game as an HTML file">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#download"/></svg>
+</button>
+<button class="direct-game-close" data-direct-game-close title="Close game" aria-label="Close game">
+<svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><use href="./assets/icons/hugeicons/sprite.svg#x"/></svg>
+</button>
+</section>
+<div class="backdrop" hidden></div>
+<div class="grid"></div>
+<script src="./scramjet/scramjet.js"></script>
+<script src="./controller/controller.api.js"></script>
+<script src="./assets/js/b.index.81033fe01dbe.js"></script>
+<script src="./assets/js/b.app.9c561cc6f444.js"></script>
+<script src="./assets/js/b.browser.url.ad69124d457a.js"></script>
+<script src="./assets/js/b.settings.data.c6d34b806b2e.js"></script>
+<script src="./assets/js/b.extensions.6e7cb2dbb5ec.js"></script>
+<script src="./assets/js/b.browser.78641b699cb8.js"></script>
+<script src="./assets/js/b.dropdown.91d343458090.js"></script>
+<script src="./assets/js/b.games.data.592c935e065e.js"></script>
+<script src="./assets/js/b.games.95b998cd351f.js"></script>
+<script src="./assets/js/b.movies.1de45135226e.js"></script>
+<script src="./assets/js/b.manga.2fbe99352b87.js"></script>
+<script src="./assets/js/b.background.ea0ca4b45cd6.js"></script>
+<script src="./assets/js/b.settings.47f239b4fa46.js"></script>
+<script src="./assets/js/b.announcements.data.5d60225445f0.js"></script>
+<script src="./assets/js/b.announcements.08195197e4d1.js"></script>
+<script src="./assets/js/b.ads.7c2e8fa21c36.js"></script>
+<script>
+(function () {
+var splash = document.getElementById("launch-screen");
+if (!splash) return;
+function dismiss() {
+splash.classList.add("is-leaving");
+splash.addEventListener("animationend", function () { splash.remove(); }, { once: true });
+if (document.documentElement.classList.contains("no-motion")) splash.remove();
+}
+function dismissAfterMinimum() {
+setTimeout(dismiss, Math.max(0, 2400 - performance.now()));
+}
+if (document.readyState === "complete") {
+dismissAfterMinimum();
+} else {
+window.addEventListener("load", function () { dismissAfterMinimum(); });
+}
+})();
+</script>
+</body>
+</html>
