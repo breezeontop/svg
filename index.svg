@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <foreignObject width="100%" height="100%">
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+      <head>
+        <script>/*<![CDATA[*/(function(){
+  var XHTML_NS="http://www.w3.org/1999/xhtml";
+  var svg=document.documentElement;
+  var root=document.querySelector("foreignObject").firstElementChild;
+  var origCE=document.createElement.bind(document);
+  var origCENS=document.createElementNS.bind(document);
+  Object.defineProperty(document,"head",{get:function(){return root.querySelector("head")},configurable:true});
+  Object.defineProperty(document,"body",{get:function(){return root.querySelector("body")},configurable:true});
+  Object.defineProperty(document,"documentElement",{get:function(){return root},configurable:true});
+  document.createElement=function(t,o){return typeof t==="string"?origCENS(XHTML_NS,t,o):origCE(t,o)};
+  document.createElementNS=function(ns,n,o){return (ns==null||ns===XHTML_NS)?origCENS(XHTML_NS,n,o):origCENS(ns,n,o)};
+  Object.defineProperty(document,"getElementById",{value:function(id){return root.querySelector('[id="'+String(id).replace(/["\\]/g,'\\$&')+'"]')},configurable:true,writable:true});
+  document.getElementsByTagName=function(t){return root.getElementsByTagNameNS(XHTML_NS,t)};
+  document.getElementsByTagNameNS=function(ns,t){return root.getElementsByTagNameNS(ns,t)};
+  document.getElementsByClassName=function(c){return root.getElementsByClassName(c)};
+  var origQS=document.querySelector.bind(document);
+  var origQSA=document.querySelectorAll.bind(document);
+  document.querySelector=function(s){try{return root.querySelector(s)||origQS(s)}catch(e){return origQS(s)}};
+  document.querySelectorAll=function(s){try{var a=root.querySelectorAll(s);return a.length?a:origQSA(s)}catch(e){return origQSA(s)}};
+  var mirrored=/^(data-|class$|style$)/;
+  function mirror(){
+    var seen={};
+    for(var i=0;i<root.attributes.length;i++){var a=root.attributes[i];if(mirrored.test(a.name)){seen[a.name]=1;svg.setAttribute(a.name,a.value)}}
+    for(var j=svg.attributes.length-1;j>=0;j--){var n=svg.attributes[j].name;if(mirrored.test(n)&&!seen[n])svg.removeAttribute(n)}
+  }
+  mirror();
+  new MutationObserver(mirror).observe(root,{attributes:true});
+})();/*]]>*/</script>
+        <style><![CDATA[html,body{margin:0;width:100%;height:100%;overflow:hidden}foreignObject{overflow:visible}]]></style>
+<script><![CDATA[window.breezeConfig={"api":"https://mathematics.kristenblackburnvolleyballcamps.com","wisp":"wss://mathematics.kristenblackburnvolleyballcamps.com/wind/","pool":[{"api":"https://mathematics.kristenblackburnvolleyballcamps.com","wisp":"wss://mathematics.kristenblackburnvolleyballcamps.com/wind/"},{"api":"https://mathematics.southpadreislandkiteboarding.com","wisp":"wss://mathematics.southpadreislandkiteboarding.com/wind/"},{"api":"https://mathematics.bananadogstore.com","wisp":"wss://mathematics.bananadogstore.com/wind/"},{"api":"https://mathematics.aplusmartialarts-templehills.com","wisp":"wss://mathematics.aplusmartialarts-templehills.com/wind/"},{"api":"https://mathematics.actingoutdoor.com","wisp":"wss://mathematics.actingoutdoor.com/wind/"},{"api":"https://mathematics.restorecounselingcenter.org","wisp":"wss://mathematics.restorecounselingcenter.org/wind/"}]};]]></script>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/webp" href="./assets/app/fav-D-bV7Z_e.webp"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="color-scheme" content="dark light"/>
+    <title>breeze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap"/>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0SFBC6Z5TL"/>
+    <script><![CDATA[
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-0SFBC6Z5TL');
+    ]]></script>
+    <!-- vite-ignore keeps this link out of the bundle: b.appearance.js swaps its href per accent and anchors the custom-accent style after it. -->
+    <link rel="stylesheet" href="./assets/css/colors/default.css" id="colorlink"/>
+
+    <script src="./assets/js/b.config.js"/>
+    <script src="./assets/js/b.appearance.js"/>
+    <script src="./assets/js/b.glyphs.js"/>
+    <script src="./assets/js/b.monitor.js"/>
+
+    <!-- Launch screen styles are inline so the splash paints before the bundle loads.
+         Literal values only: the design tokens ship with the bundle. -->
+    <style><![CDATA[body{margin:0}._6xob7co,._6xob7co:before,._6xob7co:after,._6xob7co *,._6xob7co :before,._6xob7co :after{box-sizing:border-box}._6xob7co{--lp-ink:#14213d;--lp-muted:#5b6577;--lp-line:#e3e8ef;--lp-brand:#2563eb;z-index:999999;color:var(--lp-ink);background:#f6f8fc;flex-direction:column;justify-content:flex-start;align-items:stretch;gap:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;display:flex;position:fixed;inset:0;overflow:hidden}.lp-nav{border-bottom:1px solid var(--lp-line);background:#fff;align-items:center;gap:32px;padding:18px 6vw;font-size:.9rem;display:flex}.lp-brand{align-items:center;gap:10px;font-size:1.1rem;font-weight:700;display:flex}.lp-mark{background:var(--lp-brand);color:#fff;border-radius:8px;place-items:center;width:28px;height:28px;font-size:.95rem;display:grid}.lp-links{color:var(--lp-muted);gap:24px;margin-right:auto;display:flex}.lp-signin{color:var(--lp-brand);font-weight:600}.lp-hero{flex:1;justify-content:center;align-items:center;gap:6vw;padding:0 6vw;display:flex}.lp-copy{max-width:440px;animation:.6s cubic-bezier(.2,0,0,1) .1s both lp-rise}.lp-eyebrow{color:var(--lp-brand);letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;font-weight:700}.lp-copy h1{letter-spacing:-.03em;margin:12px 0;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.1}.lp-copy p{color:var(--lp-muted);margin:0 0 24px;line-height:1.5}.lp-cta{background:var(--lp-brand);color:#fff;border-radius:10px;padding:12px 22px;font-weight:600;display:inline-block}.lp-card{border:1px solid var(--lp-line);background:#fff;border-radius:16px;width:min(380px,100%);padding:18px;font-size:.88rem;animation:.6s cubic-bezier(.2,0,0,1) .25s both lp-rise;box-shadow:0 20px 50px #14213d1a}.lp-card-head{justify-content:space-between;margin-bottom:10px;font-weight:700;display:flex}.lp-card-head span:last-child{color:var(--lp-muted);font-weight:500}.lp-row{border-top:1px solid var(--lp-line);grid-template-columns:1fr 48px 48px 40px;padding:10px 0;display:grid}.lp-row b{color:var(--lp-brand)}.lp-row-h{color:var(--lp-muted);text-transform:uppercase;border-top:0;font-size:.75rem;font-weight:600}.lp-bar{background:var(--lp-line);border-radius:3px;height:6px;margin-top:8px;overflow:hidden}.lp-bar i{background:var(--lp-brand);border-radius:3px;height:100%;animation:2.4s cubic-bezier(.2,0,0,1) .1s both lp-fill;display:block}@media (max-width:760px){.lp-links,.lp-signin{display:none}.lp-hero{flex-direction:column;justify-content:center;gap:28px}}._6xob7co.is-leaving{pointer-events:none;animation:.6s cubic-bezier(.2,0,0,1) forwards launch-fade-out}@keyframes lp-rise{0%{opacity:0;transform:translateY(12px)}}@keyframes lp-fill{0%{width:0}to{width:86%}}@keyframes launch-fade-out{to{opacity:0}}.no-motion .lp-copy,.no-motion .lp-card,.no-motion .lp-bar i{animation:none}.no-motion .lp-bar i{width:86%}.no-motion ._6xob7co.is-leaving{display:none}body:has(#_6xob7co:not(.is-leaving)) .homecontent>*{animation-play-state:paused}]]></style>
+    <link rel="stylesheet" crossorigin="" href="./assets/app/style-B7AoVGmF.css"/>
+  
+      </head>
+      <body>
+
+    <div class="_6xob7co" id="_6xob7co" aria-hidden="true">
+      <header class="lp-nav">
+        <span class="lp-brand"><span class="lp-mark">G</span>Gradewell</span>
+        <span class="lp-links"><span>Gradebook</span><span>Attendance</span><span>Reports</span><span>Pricing</span></span>
+        <span class="lp-signin">Sign in</span>
+      </header>
+      <main class="lp-hero">
+        <div class="lp-copy">
+          <span class="lp-eyebrow">Gradebook for teachers</span>
+          <h1>Grading that keeps up with your classroom.</h1>
+          <p>Track assignments, attendance and progress in one place, and share reports with students and families.</p>
+          <span class="lp-cta">Start free trial</span>
+        </div>
+        <div class="lp-card">
+          <div class="lp-card-head"><span>Period 3 &#xb7; Biology</span><span>Fall term</span></div>
+          <div class="lp-row lp-row-h"><span>Student</span><span>Quiz</span><span>Lab</span><span>Avg</span></div>
+          <div class="lp-row"><span>Amara Okafor</span><span>92</span><span>88</span><b>A-</b></div>
+          <div class="lp-row"><span>Ben Hartley</span><span>81</span><span>85</span><b>B</b></div>
+          <div class="lp-row"><span>Chloe Martin</span><span>96</span><span>99</span><b>A</b></div>
+          <div class="lp-row"><span>Diego Reyes</span><span>74</span><span>79</span><b>C+</b></div>
+          <div class="lp-bar"><i/></div>
+        </div>
+      </main>
+    </div>
+
+
+    <div id="root"/>
+    <div id="overlay-root"/>
+
+    <script src="./2sghk/xjmyln.js"/>
+    <script src="./tpa2s/xhv4h1.js"/>
+    <script><![CDATA[
+    (function () {
+      var splash = document.getElementById("_6xob7co");
+      if (!splash) return;
+      function dismiss() {
+        splash.classList.add("is-leaving");
+        splash.addEventListener("animationend", function () { splash.remove(); }, { once: true });
+        if (document.documentElement.classList.contains("no-motion")) splash.remove();
+      }
+      function dismissAfterMinimum() {
+        setTimeout(dismiss, Math.max(0, 2400 - performance.now()));
+      }
+      if (document.readyState === "complete") {
+        dismissAfterMinimum();
+      } else {
+        window.addEventListener("load", function () { dismissAfterMinimum(); });
+      }
+    })();
+    ]]></script>
+  <script src="./assets/app/index-BFiT3FEJ.js"/>
+
+      </body>
+    </html>
+  </foreignObject>
+</svg>

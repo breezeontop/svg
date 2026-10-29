@@ -1,0 +1,57 @@
+/* Conduit ITC, bundled locally. Only woff2 and woff: every browser breeze
+   supports reads one of them, so the eot and ttf files are left out.
+   There is no 400 cut, so regular text falls back to Medium. */
+
+@font-face {
+    font-family: "Conduit ITC";
+    src: url("ConduitITC-Light.woff2") format("woff2"),
+        url("ConduitITC-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Conduit ITC";
+    src: url("ConduitITC-LightItalic.woff2") format("woff2"),
+        url("ConduitITC-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Conduit ITC";
+    src: url("ConduitITC-Medium.woff2") format("woff2"),
+        url("ConduitITC-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Conduit ITC";
+    src: url("ConduitITC-MediumItalic.woff2") format("woff2"),
+        url("ConduitITC-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Conduit ITC";
+    src: url("ConduitITC-Bold.woff2") format("woff2"),
+        url("ConduitITC-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Conduit ITC";
+    src: url("ConduitITC-BoldItalic.woff2") format("woff2"),
+        url("ConduitITC-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
