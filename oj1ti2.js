@@ -1,0 +1,1 @@
+if(navigator.userAgent.includes("Firefox")){Object.defineProperty(globalThis,"crossOriginIsolated",{value:true,writable:false})}importScripts("7r8ox/fsnpfl.js");addEventListener("fetch",e=>{if(_l892ec6.shouldRoute(e)){e.respondWith(_l892ec6.route(e))}});

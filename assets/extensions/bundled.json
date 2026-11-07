@@ -1,0 +1,12 @@
+{
+  "extensions": [
+    {
+      "key": "ublock-origin-lite",
+      "name": "uBlock Origin Lite",
+      "file": "ublock-origin-lite.zip",
+      "version": "2026.1006.1931",
+      "sha256": "1670f92590f5ad5b20f02d0a75e144572567b4ba979b3dc3204c41f651206fe7",
+      "source": "https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1006.1931"
+    }
+  ]
+}
