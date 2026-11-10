@@ -1,0 +1,67 @@
+{
+  "banner": null,
+  "entries": [
+    {
+      "id": "2026-11-06-sources",
+      "version": "1.1.4",
+      "date": "2026-11-06",
+      "title": "More sources and caption timing",
+      "items": [
+        "Seven new movie sources: Ember, Vortex, Zephyr, Onyx, Echo, Haven and Comet, plus every Flux mirror on its own.",
+        "If a source fails or stalls, the player moves on to the next one by itself, and looks for more once they've all failed.",
+        "Caption timing: nudge subtitles earlier or later from the captions menu when they're out of sync.",
+        "Custom font: pick Custom under Settings > Appearance > Font and type any Google Fonts name to use it everywhere."
+      ]
+    },
+    {
+      "id": "2026-11-05-orbit",
+      "version": "1.1.3",
+      "date": "2026-11-05",
+      "title": "Orbit removed",
+      "items": [
+        "Orbit is gone from the source list: its streams stopped loading, so picking it only led to an error."
+      ]
+    },
+    {
+      "id": "2026-10-31-sources",
+      "version": "1.1.2",
+      "date": "2026-10-31",
+      "title": "New sources and player controls",
+      "items": [
+        "Two new movie sources: Orbit and Prism join the lineup, so more titles have a working stream.",
+        "Source switcher: sources now have codenames and expanding them shows the available qualities.",
+        "Caption controls: a master on/off switch at the top, with the language list nested underneath."
+      ]
+    },
+    {
+      "id": "2026-10-27-servers",
+      "version": "1.1.1",
+      "date": "2026-10-27",
+      "title": "Server switcher",
+      "items": [
+        "Pick a Breeze server yourself in Settings, Proxy, or leave it on Auto to use the first one that's working."
+      ]
+    },
+    {
+      "id": "2026-10-10-1.1.0",
+      "version": "1.1.0",
+      "date": "2026-10-10",
+      "title": "Custom backgrounds, glass, custom accents and game downloads",
+      "items": [
+        "Custom backgrounds: upload an image or paste a link in Settings, Appearance, and set how much it is dimmed.",
+        "Glass: a new Appearance switch that makes panels, buttons and menus frosted and see-through.",
+        "Custom accent: pick any colour from the new Custom option in the accent list.",
+        "Download the game you're playing: the new button next to close saves it as an HTML file. It still loads the game's files from Breeze, so you need to be online."
+      ]
+    },
+    {
+      "id": "2026-10-09",
+      "version": "1.0.0",
+      "date": "2026-10-09",
+      "title": "Release!",
+      "items": [
+        "Welcome to Breeze! Thanks for stopping by. If you like this website, share it with friends."
+      ]
+    }
+  ]
+}
