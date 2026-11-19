@@ -1,0 +1,13 @@
+/* Google Sans Rounded (github.com/tiwa244/Google-Sans-Rounded, SIL OFL 1.1,
+   see OFL.txt), bundled locally. One variable woff2 cut from the upstream
+   GoogleSansRounded-Regular.ttf: its weight axis (1–1000) kept, and the
+   optical size, width, grade and slant axes fixed at their defaults with
+   fontTools' varLib.instancer, so every weight comes from 92 KB. */
+
+@font-face {
+    font-family: "Google Sans Rounded";
+    src: url("GoogleSansRounded.woff2") format("woff2");
+    font-weight: 1 1000;
+    font-style: normal;
+    font-display: swap;
+}

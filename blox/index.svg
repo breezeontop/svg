@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <!-- The CDN build's way into Roblox (scripts/build-svg.mjs copies it to
+       svg/blox/). A static host serves neither index.html as a page nor the
+       cross-origin isolation headers the engine needs, so this only registers
+       sw.js?standalone and reloads: from then on the worker answers this url
+       with index.html and those headers. Served by our own server, /blox/ is
+       index.html directly and this file is unused. -->
+  <style>text{font:15px system-ui,sans-serif;fill:#888}</style>
+  <text id="status" x="50%" y="50%" text-anchor="middle">Starting Roblox…</text>
+  <script><![CDATA[
+(async () => {
+  const status = document.getElementById("status");
+  // ?boot marks the reload. If the worker still has not answered that, say so
+  // rather than reloading forever (and drop the mark, so a reload retries).
+  const url = new URL(location.href);
+  try {
+    if (!("serviceWorker" in navigator)) throw new Error("This browser has no service worker support.");
+    if (url.searchParams.has("boot")) throw new Error("Roblox couldn't start here. Reload to try again.");
+    await navigator.serviceWorker.register(new URL("sw.js?standalone", location.href), { scope: "./" });
+    await navigator.serviceWorker.ready;
+    url.searchParams.set("boot", "");
+    location.replace(url);
+  } catch (error) {
+    url.searchParams.delete("boot");
+    history.replaceState(history.state, "", url);
+    status.textContent = error.message || String(error);
+  }
+})();
+  ]]></script>
+</svg>
