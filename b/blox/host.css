@@ -1,0 +1,81 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #18191c; color: #fff; font: 15px system-ui, sans-serif; }
+
+/* Off-screen: the engine focuses these to get IME and mobile keyboard input. */
+#input-container { position: absolute; top: 0; left: -1000px; z-index: -1; }
+#input-input, #input-textarea { display: none; border: 0; outline: 0; background: transparent; resize: none; }
+
+/* cursor: none: the engine draws its own cursor. */
+#canvas { display: block; width: 100vw; height: 100vh; background: #000; outline: none; touch-action: none; cursor: none; }
+#canvas.tab-lock-contended { filter: blur(4px); }
+
+#loading-overlay {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  background: #18191c; transition: opacity 0.6s ease;
+}
+#loading-overlay.loading-exiting { opacity: 0; pointer-events: none; }
+#loading-background-image {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  opacity: 0; filter: blur(24px) brightness(0.4); transform: scale(1.1);
+}
+#loading-background-image[src] { opacity: 1; }
+.loading-card { position: relative; display: grid; justify-items: center; gap: 10px; max-width: min(90vw, 420px); text-align: center; }
+#loading-icon-shell { width: 128px; height: 128px; border-radius: 22px; overflow: hidden; background: #2b2d31; }
+#loading-experience-icon { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.3s; }
+#loading-icon-shell.loading-image-ready #loading-experience-icon { opacity: 1; }
+#loading-experience-title { font-size: 22px; font-weight: 700; }
+.loading-creator { color: #bbb; }
+#status { min-height: 1.3em; color: #ccc; white-space: pre-line; }
+#loading-overlay.loading-failed .loading-card { display: none; }
+
+.loading-error-panel {
+  position: relative; display: grid; gap: 12px; width: min(90vw, 400px); padding: 20px;
+  border-radius: 12px; background: #232527; text-align: center;
+}
+.loading-error-panel[hidden] { display: none; }
+#loading-error-title { font-size: 18px; }
+#loading-error-code { color: #999; font-size: 13px; }
+#loading-error-leave, .session button {
+  padding: 9px 16px; border: 0; border-radius: 8px; background: #335fff; color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+#loading-cancel {
+  position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; border: 0; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1); color: #fff; font-size: 22px; line-height: 1; cursor: pointer;
+}
+#loading-overlay.loading-failed #loading-cancel { display: none; }
+
+.session {
+  position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; background: rgba(0, 0, 0, 0.6);
+}
+.session form { display: grid; gap: 12px; width: min(92vw, 420px); padding: 22px; border-radius: 12px; background: #232527; }
+.session h1 { font-size: 19px; }
+.session p { color: #bbb; font-size: 14px; line-height: 1.45; }
+.session input {
+  width: 100%; padding: 9px 11px; border: 1px solid #444; border-radius: 8px; background: #18191c; color: #fff; font: inherit;
+}
+.session input[aria-invalid="true"] { border-color: #ff6b6b; }
+.session .error { min-height: 1.2em; color: #ff8a8a; }
+.session .actions { display: flex; gap: 8px; justify-content: flex-end; }
+.session button.secondary { background: #3a3c40; }
+.session button:disabled { opacity: 0.6; cursor: default; }
+
+/* No place to join yet: search Roblox or paste a game link. */
+#loading-overlay[hidden], body:has(.launcher) #canvas { display: none; }
+body:has(.launcher) { overflow: auto; }
+.launcher { width: min(94vw, 760px); margin: 0 auto; padding: 32px 0; }
+.launcher form { display: flex; gap: 8px; }
+.launcher input {
+  flex: 1; padding: 9px 11px; border: 1px solid #444; border-radius: 8px; background: #232527; color: #fff; font: inherit;
+}
+.launcher form button {
+  padding: 9px 16px; border: 0; border-radius: 8px; background: #335fff; color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+.launcher-status { min-height: 1.3em; margin: 14px 0 6px; color: #bbb; }
+.launcher-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; list-style: none; }
+.launcher-games button {
+  display: grid; gap: 4px; width: 100%; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer;
+}
+.launcher-games img { width: 100%; aspect-ratio: 1; border-radius: 10px; background: #2b2d31; object-fit: cover; }
+.launcher-games .name { overflow: hidden; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.launcher-games .meta { overflow: hidden; color: #999; font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+.launcher-games button:hover img, .launcher-games button:focus-visible img { outline: 2px solid #335fff; }
