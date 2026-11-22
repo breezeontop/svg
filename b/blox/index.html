@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roblox</title>
+  <link rel="stylesheet" href="host.css">
+</head>
+<body>
+  <!-- Every id below is looked up by Roblox's WasmPlayer.js: the IME inputs, the
+       canvas, the loading screen and the two hidden debug spans. -->
+  <div id="input-container">
+    <textarea id="input-textarea" autocapitalize="off"></textarea>
+    <input id="input-input" autocapitalize="off">
+  </div>
+  <canvas id="canvas" tabindex="-1"></canvas>
+  <div id="loading-overlay" role="dialog" aria-label="Loading Roblox" aria-busy="true">
+    <img id="loading-background-image" alt="" crossorigin="anonymous">
+    <section class="loading-card" aria-labelledby="loading-experience-title">
+      <div id="loading-icon-shell"><img id="loading-experience-icon" alt="" crossorigin="anonymous"></div>
+      <h1 id="loading-experience-title">Roblox</h1>
+      <p class="loading-creator">
+        <span id="loading-experience-creator" hidden></span>
+        <span id="loading-verified-badge" role="img" aria-label="Verified creator" hidden></span>
+      </p>
+      <p id="status" role="status" aria-live="polite">Starting…</p>
+    </section>
+    <section class="loading-error-panel" role="alertdialog" aria-labelledby="loading-error-title" aria-describedby="loading-error-message loading-error-code" hidden>
+      <h1 id="loading-error-title">Join Error</h1>
+      <p id="loading-error-message"></p>
+      <p id="loading-error-code"></p>
+      <button id="loading-error-leave" type="button">Leave</button>
+    </section>
+    <button id="loading-cancel" type="button" aria-label="Cancel loading" title="Cancel">×</button>
+  </div>
+  <div hidden><span id="server"></span><span id="proxyenabled"></span></div>
+  <script type="module" src="host.js"></script>
+</body>
+</html>
